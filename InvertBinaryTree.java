@@ -30,11 +30,16 @@ class Solution {
       // Tc: O(n) and Sc: O(n)
         if(root == null) return null;
 
-        TreeNode t = root.right;
-        root.right = root.left;
-        root.left = t;
-        invertTree(root.right);
+        TreeNode t = root.left;
+        //TreeNode t = root.right;
+        root.left = root.right;
+        //root.right = root.left;
+        root.right = t;
+        //root.left = t;
         invertTree(root.left);
+        //invertTree(root.right);
+        invertTree(root.right);
+        //invertTree(root.left);
 
         return root;
     }
