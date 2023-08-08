@@ -29,6 +29,7 @@ Output: false
  */
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
+        // Tc: O(m+n) where m is no of nodes of p and n is no of nodes of q and Sc: O(1)
          if(p == null && q == null) return true;
          if(p == null || q == null || p.val != q.val)
         {
