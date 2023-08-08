@@ -27,6 +27,7 @@ Output: []
  */
 class Solution {
     public TreeNode invertTree(TreeNode root) {
+      // Tc: O(n) and Sc: O(n)
         if(root == null) return null;
 
         TreeNode t = root.right;
