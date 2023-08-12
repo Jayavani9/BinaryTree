@@ -33,6 +33,7 @@ class Solution {
         inorder(root.left);
         if(prev != null && prev.val >= root.val) flag = false;
         prev = root;
-        if(flag) inorder(root.right);
+        //if(flag) 
+        inorder(root.right);
     }
 }
