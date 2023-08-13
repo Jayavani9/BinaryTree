@@ -29,7 +29,7 @@ Output: []
  // It uses Queue in an iterative approach
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-      // Tc: O(n) and Sc: O(n)
+      // Time complexity: O(n) and Space complexity: O(n)
         if(root == null)
         {
             return new ArrayList<>();
