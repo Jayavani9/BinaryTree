@@ -1,4 +1,5 @@
 100. Same Tree
+    
 Given the roots of two binary trees p and q, write a function to check if they are the same or not.
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
 
@@ -27,6 +28,8 @@ Output: false
  *     }
  * }
  */
+
+    
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         // Tc: O(m+n) where m is no of nodes of p and n is no of nodes of q and Sc: O(N) because of the stack
